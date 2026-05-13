@@ -166,10 +166,11 @@ main { flex: 1; position: relative; z-index: 2; }
 }
 
 /* ─── topics / carousel ─── */
+
 .topics {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0 var(--pad-x) 100px;
+  padding: 0 var(--pad-x) 160px;
 }
 .topics-head {
   display: flex;
