@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>01 · linear regression — ohmydata</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html" class="mark">◐ ohmydata</a>
+    <span class="meta">/ 01 · linear regression</span>
+  </header>
+
+  <main>
+    <article class="topic">
+      <a href="index.html" class="back">← all topics</a>
+
+      <header class="topic-head">
+        <span class="topic-num">topic 01</span>
+        <h1 class="topic-title">linear <em>regression</em></h1>
+        <p class="topic-tagline">the workhorse. lines, residuals, and why least squares.</p>
+        <span class="status-pill">status · just started</span>
+      </header>
+
+      <section class="topic-section">
+        <h2>tl;dr</h2>
+        <p class="placeholder">
+          one paragraph, your own words. if you can't write this from scratch, you don't get it yet.
+        </p>
+      </section>
+
+      <section class="topic-section">
+        <h2>intuition</h2>
+        <p class="placeholder">
+          how would you explain this to a friend over coffee? no notation, just the shape of the idea.
+          what is the model actually trying to do? what does it assume about the world?
+        </p>
+      </section>
+
+      <section class="topic-section">
+        <h2>the math</h2>
+        <p class="placeholder">
+          key equation(s), what each symbol means, and a derivation sketch if it helps.
+        </p>
+        <div class="math-block">\hat{y} = \beta_0 + \beta_1 x \quad\quad \text{minimise: } \sum_i (y_i - \hat{y}_i)^2</div>
+        <p class="placeholder" style="margin-top: 14px;">
+          (rendered as plain text for now — drop in KaTeX or MathJax later if you want pretty math.)
+        </p>
+      </section>
+
+      <section class="topic-section">
+        <h2>see it move</h2>
+        <p class="placeholder">drop a gif or short video here that animates the concept.</p>
+        <div class="visual-placeholder">
+          <span>gif / video goes here</span>
+        </div>
+        <p class="placeholder" style="margin-top: 14px;">
+          replace the placeholder div with
+          <code style="font-family: var(--font-mono); font-style: normal; color: var(--accent);">&lt;img src="assets/your-gif.gif"&gt;</code>
+          or a
+          <code style="font-family: var(--font-mono); font-style: normal; color: var(--accent);">&lt;video autoplay muted loop playsinline&gt;</code>.
+        </p>
+      </section>
+
+      <section class="topic-section">
+        <h2>code</h2>
+        <p class="placeholder">smallest working example, well commented.</p>
+        <pre class="code-block"><code>from sklearn.linear_model import LinearRegression
+import numpy as np
+
+X = np.array([[1], [2], [3], [4]])
+y = np.array([2, 4, 6, 8])
+
+model = LinearRegression().fit(X, y)
+print(model.coef_, model.intercept_)</code></pre>
+      </section>
+
+      <section class="topic-section">
+        <h2>what tripped me up</h2>
+        <ul class="placeholder">
+          <li>the thing the textbook glossed over</li>
+          <li>the bug that took two days to find</li>
+          <li>the assumption you didn't realise you were making</li>
+        </ul>
+      </section>
+
+      <section class="topic-section">
+        <h2>sources</h2>
+        <ul class="placeholder">
+          <li>the book / course chapter</li>
+          <li>the blog post that made it click</li>
+          <li>the paper, if any</li>
+        </ul>
+      </section>
+
+      <nav class="topic-nav">
+        <a class="disabled" aria-hidden="true">
+        <span class="nav-label">← previous</span>
+        <span class="nav-title">—</span>
+      </a>
+        <a class="nav-next" href="02-logistic-regression.html">
+        <span class="nav-label">next · 02 →</span>
+        <span class="nav-title">logistic regression</span>
+      </a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> kavin · ohmydata</span>
+    <span>built in public</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
