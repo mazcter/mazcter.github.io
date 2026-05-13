@@ -205,6 +205,10 @@ main { flex: 1; position: relative; z-index: 2; }
   color: var(--accent);
 }
 
+
+.track {
+  margin-bottom: 60px;
+}
 .track {
   display: flex;
   gap: 18px;
