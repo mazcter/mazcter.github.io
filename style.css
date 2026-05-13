@@ -141,7 +141,7 @@ main { flex: 1 0 auto; position: relative; z-index: 2; }
 }
 
 .wizard-sprite {
-  width: 128px;
+  width: 96px;
   height: auto;
   display: block;
   image-rendering: pixelated;
@@ -473,7 +473,7 @@ main { flex: 1 0 auto; position: relative; z-index: 2; }
     align-items: flex-start;
     gap: 28px;
   }
-  .wizard-sprite { width: 104px; }
+  .wizard-sprite { width: 80px; }
 }
 
 @media (max-width: 600px) {
