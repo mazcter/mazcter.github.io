@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ohmydata — learning ML, out loud</title>
+  <meta name="description" content="A learn-along-with-me journey through machine learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <span class="mark">◐ ohmydata</span>
+    <span class="meta">vol. 01 — ongoing</span>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <h1 class="title">
+        <span class="title-ohmy">Oh<em>my</em></span><span class="title-data">data</span>
+      </h1>
+
+      <p class="about">
+        Hi, I'm <strong>Kavin</strong>. This is where I learn machine learning in public — notes,
+        intuition checks, half-broken models, and the occasional <em>aha</em>. No polish, just
+        progress. If you're learning too, follow along.
+      </p>
+
+      <div class="cta-row">
+        <a href="socials.html" class="btn">
+          <span>find me elsewhere</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="projects.html" class="btn btn-ghost">
+          <span>things i've built</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- CAROUSEL -->
+    <section class="topics">
+      <div class="topics-head">
+        <h2>what's on the syllabus</h2>
+        <div class="controls">
+          <button class="ctrl" data-dir="-1" aria-label="previous">←</button>
+          <button class="ctrl" data-dir="1" aria-label="next">→</button>
+        </div>
+      </div>
+
+      <!--
+        To add a topic: copy a <article class="card"> block.
+        For a GIF or video, swap <img> for <video autoplay muted loop playsinline>.
+        Drop your files in an /assets folder and update src.
+      -->
+      <div class="track" id="track">
+        <article class="card">
+          <div class="media">
+            <img src="https://placehold.co/600x400/0f0f0f/d4a574?text=01+%E2%80%94+linear+regression" alt="Linear regression" />
+          </div>
+          <div class="card-body">
+            <span class="num">01</span>
+            <h3>linear regression</h3>
+            <p>the workhorse. lines, residuals, and why least squares.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="media">
+            <img src="https://placehold.co/600x400/0f0f0f/d4a574?text=02+%E2%80%94+logistic+regression" alt="Logistic regression" />
+          </div>
+          <div class="card-body">
+            <span class="num">02</span>
+            <h3>logistic regression</h3>
+            <p>from a line to a probability. sigmoid, log-odds, decision boundaries.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="media">
+            <img src="https://placehold.co/600x400/0f0f0f/d4a574?text=03+%E2%80%94+gradient+descent" alt="Gradient descent" />
+          </div>
+          <div class="card-body">
+            <span class="num">03</span>
+            <h3>gradient descent</h3>
+            <p>walking downhill, badly, until the loss stops complaining.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="media">
+            <img src="https://placehold.co/600x400/0f0f0f/d4a574?text=04+%E2%80%94+decision+trees" alt="Decision trees" />
+          </div>
+          <div class="card-body">
+            <span class="num">04</span>
+            <h3>decision trees</h3>
+            <p>nested if-statements that learn to ask the right questions.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="media">
+            <img src="https://placehold.co/600x400/0f0f0f/d4a574?text=05+%E2%80%94+neural+networks" alt="Neural networks" />
+          </div>
+          <div class="card-body">
+            <span class="num">05</span>
+            <h3>neural networks</h3>
+            <p>stacked linear algebra that somehow recognises cats.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="media">
+            <img src="https://placehold.co/600x400/0f0f0f/d4a574?text=06+%E2%80%94+clustering" alt="Clustering" />
+          </div>
+          <div class="card-body">
+            <span class="num">06</span>
+            <h3>clustering</h3>
+            <p>k-means, hierarchies, and what "similar" actually means.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> kavin · ohmydata</span>
+    <span>built in public</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

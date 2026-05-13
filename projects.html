@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>projects — ohmydata</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html" class="mark">◐ ohmydata</a>
+    <span class="meta">/ projects</span>
+  </header>
+
+  <main>
+    <section class="page">
+      <a href="index.html" class="back">← back</a>
+      <h1 class="page-title">things i've <em>built</em></h1>
+      <p class="page-sub">a running log of experiments, notebooks, and small wins.</p>
+
+      <!-- duplicate <article class="project"> blocks to add more -->
+      <div class="projects">
+        <article class="project">
+          <div class="project-head">
+            <span class="num">01</span>
+            <h3>project name</h3>
+          </div>
+          <p>one-line description of what it does and why it was worth building.</p>
+          <div class="project-foot">
+            <span class="tag">python</span>
+            <span class="tag">scikit-learn</span>
+            <a href="#" target="_blank" rel="noopener">view →</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <span class="num">02</span>
+            <h3>another project</h3>
+          </div>
+          <p>another short description. keep these tight — one or two sentences.</p>
+          <div class="project-foot">
+            <span class="tag">pytorch</span>
+            <span class="tag">vision</span>
+            <a href="#" target="_blank" rel="noopener">view →</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <span class="num">03</span>
+            <h3>placeholder</h3>
+          </div>
+          <p>swap in a real project here as you go.</p>
+          <div class="project-foot">
+            <span class="tag">tag</span>
+            <a href="#" target="_blank" rel="noopener">view →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> kavin · ohmydata</span>
+    <span>built in public</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
