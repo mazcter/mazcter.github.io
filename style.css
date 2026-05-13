@@ -124,6 +124,56 @@ main { flex: 1 0 auto; position: relative; z-index: 2; }
   color: var(--ink);
   margin-bottom: 48px;
 }
+
+/* ─── about row + dancing wizard ─── */
+.about-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+.about-row .about { margin-bottom: 0; }
+
+.wizard-wrap {
+  flex-shrink: 0;
+  /* Y-axis bounce — the "step" half of the candyfloss */
+  animation: candyfloss-bounce 0.66s ease-in-out infinite;
+}
+
+.wizard-sprite {
+  width: 128px;
+  height: auto;
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  /* lateral sway — the "candyfloss" half (twice the period of the bounce) */
+  transform-origin: 50% 95%;
+  animation: candyfloss-sway 1.32s ease-in-out infinite;
+  filter: drop-shadow(0 6px 0 rgba(0,0,0,0.18));
+}
+
+.wiz-dice {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: dice-wobble 0.66s ease-in-out infinite;
+}
+
+@keyframes candyfloss-sway {
+  0%, 100% { transform: rotate(-6deg); }
+  50%      { transform: rotate(6deg); }
+}
+@keyframes candyfloss-bounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
+}
+@keyframes dice-wobble {
+  0%, 100% { transform: rotate(-14deg) translateY(0.3px); }
+  50%      { transform: rotate(14deg) translateY(-0.3px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wizard-wrap, .wizard-sprite, .wiz-dice { animation: none; }
+}
 .about strong {
   color: var(--accent);
   font-weight: 500;
@@ -417,6 +467,15 @@ main { flex: 1 0 auto; position: relative; z-index: 2; }
 }
 
 /* ─── responsive ─── */
+@media (max-width: 700px) {
+  .about-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+  .wizard-sprite { width: 104px; }
+}
+
 @media (max-width: 600px) {
   .topbar { font-size: 11px; }
   .card { flex: 0 0 78vw; }
